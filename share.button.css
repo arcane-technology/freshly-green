@@ -7,11 +7,18 @@
 
 .sharediv {
   position:relative; 
-  top: 30px; 
-  right: 30px; 
-  padding-bottom: 40px;
+  top: 85px; 
+  right: 50px; 
+  z-index: 9999;
 }
-
+@media screen and (min-width: 600px) {
+  .sharediv {
+  position:absolute; 
+  top: 45px; 
+  right: 30px; 
+  z-index: 9999;
+}
+}
 .toastdiv {
   display: -webkit-flex;
   display: flex;
@@ -53,14 +60,15 @@
     white-space: wrap;
     border-radius: 8px;
     cursor: pointer;
-    color: #000000; 
-    background-color: #efefef
+    color: #e4d0d0; 
+    background-color: #6f88557a
    }
 @media screen and (min-width: 600px) {
   .sharebutton,
   sharebutton {
     display: inline-block;
     text-decoration: none;
+    float:right;
     height: 48px;
     text-align: center;
     vertical-align: middle;
@@ -72,8 +80,8 @@
     white-space: wrap;
     border-radius: 8px;
     cursor: pointer;
-    color: #000000; 
-    background-color: #efefef
+    color: #e7e4e4!important; 
+    background-color: #234b1e
    }
 }
 sharebutton:hover,
